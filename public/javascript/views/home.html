@@ -1,0 +1,14 @@
+
+<center><a class="btn btn-lg btn-success" ui-sref="CreateDog">Create a Dog</a><center>
+<div><br>
+	<div ng-repeat="dog in vm.dogsArray track by $index"  class="container well">
+		<h3>Name: <i>{{dog.name}}</i></h3>
+		<h3>Age: <i>{{dog.age}}</i></h3>
+		<h3>Beed: <i>{{dog.breed}}</i></h3>
+		
+		<center>
+			<a class="btn large btn-primary" ui-sref="Profile" ng-click="vm.saveIndex($index)">Profiles</a>
+		</center>
+		
+	</div>
+</div>

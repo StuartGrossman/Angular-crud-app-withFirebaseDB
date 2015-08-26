@@ -1,0 +1,35 @@
+
+<!-- <div ng-repeat="dog in vm.dogsArray track by $index"  class="container well"> -->
+<div class="container well">	
+	<div class="row" style="height: 40px;"> 
+		<div class="col-sm-6">
+			<h3>Name: <i>{{vm.dogsArray[vm.dogIndex].name}}</i></h3>
+			<h3>Age: <i>{{vm.dogsArray[vm.dogIndex].age}}</i></h3>
+			<h3>Breed: <i>{{vm.dogsArray[vm.dogIndex].breed}}</i></h3>
+		</div>
+
+		<div class="col-sm-6">
+			<div style="vertical-align: middle;">
+				<a class="btn btn-primary" ui-sref="Home">Home</a>
+
+				
+				<button class="btn btn-warning" ng-click="vm.editDog()">Edit</button>
+
+				<button class="btn btn-danger" ui-sref="Home" ng-click="vm.startDelete(vm.dogIndex)">Delete</button>
+
+				<br>
+
+				<div ng-show="vm.editStatus">
+					<input class="form-control" placeholder="Name: {{vm.dogsArray[vm.dogIndex].name}}" ng-model="vm.dog.name">
+					<input class="form-control"  placeholder="Age: {{vm.dogsArray[vm.dogIndex].age}}" ng-model="vm.dog.age">
+					<input class="form-control"  placeholder="Breed: {{vm.dogsArray[vm.dogIndex].breed}}" ng-model="vm.dog.breed">
+					<button class="btn-block btn btn-success" ng-click="vm.submitEdit(vm.dogIndex)">Submit Edit</button>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+</div>	
+<!-- </div>
+ -->

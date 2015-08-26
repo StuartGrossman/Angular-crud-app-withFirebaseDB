@@ -1,0 +1,18 @@
+<form class="well container center" ng-submit="vm.createDog()">
+	<div class="col-md-4">
+		<label> Name:</label>
+		<input class="form-control" placeholder="name of dog" ng-model="vm.dog.name">
+	</div>
+	<div class="col-md-4">
+		<label> Breed:</label>
+		<input class="form-control" placeholder="Breed of dog" ng-model="vm.dog.breed">
+	</div>
+	<div class="col-md-4">
+		<label> Age:</label>
+		<input class="form-control" placeholder="Age of dog" ng-model="vm.dog.age">
+	</div>
+	<br>
+	<div style="text-align:middle;">
+		<button type="submit" class="btn-block btn btn-success">Submit</button>
+	</div>
+</form>
